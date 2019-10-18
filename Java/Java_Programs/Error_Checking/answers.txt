@@ -1,0 +1,35 @@
+- The Code Randomizes Two Numbers And Prompts The User To Enter The Difference Of The Two Numbers
+
+-The code then checks whether the 2nd random number is bigger that the first random number if that is the case,
+ the 2nd number will be made the first number so that the answer is not negative	
+
+- If The Answer Is Correct A Message Is Displayed That The Answer Is Correct And The Variable That Keeps The Correct Count Is Incremented 
+
+- If The Answer Is Wrong A Message Is Displayed That The Answer Is Wrong
+
+- The Amount Of Tries Is Then Incremented Until The Integer "number" Is Equal To 5
+
+- Once That Is Completed You Are Displayed The Amount Of Times You Got The Question Correct, How Long It Took For You To Answer The 
+  Questions And Whether You Got The Questions Right Or Wrong
+
+Output: 
+
+What is 8 - 2? 6
+You are correct!
+What is 2 - 1? 1
+You are correct!
+What is 8 - 6? 2
+You are correct!
+What is 0 - 0? 0
+You are correct!
+What is 7 - 3? 4
+You are correct!
+
+Correct count is 5
+Test time is 12 seconds
+Results:
+8-2=6 correct
+2-1=1 correct
+8-6=2 correct
+0-0=0 correct
+7-3=4 correct
