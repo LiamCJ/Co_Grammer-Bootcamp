@@ -1,0 +1,3 @@
+Request user to enter a numeber
+Store number in n
+print the first n numbers of the fibonacci sequence

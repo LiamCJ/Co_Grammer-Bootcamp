@@ -1,0 +1,6 @@
+Start
+ four_num=Request User to enter 4 numbers
+ Read four_num
+ numerical_num=sort four_num in smallest to biggest order
+ print numerical_num
+End

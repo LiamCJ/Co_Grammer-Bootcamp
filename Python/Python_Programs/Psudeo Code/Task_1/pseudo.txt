@@ -1,0 +1,51 @@
+Pseudo Code Task:
+1
+Start
+ first_integer=0
+ 2nd_integer=0
+ biggest_number=0
+ integer=request an integer from the user let them know that if they wish to stop they should enter 0
+ Read integer
+ while integer is not = 0
+  integer=Request an integer from the user let them know that if they wish to stop they should enter 0
+  Read integer 
+  let the number entered be = first_integer
+  If first_integer>2nd_integer
+   let the variable for the biggest_number=first_integer
+  Else
+   let 2nd_integer=first_integer
+  EndIf 
+ EndWhile
+ print "The biggest number entered is biggest_number"
+End
+--------------------------------------------------------------------------------------------------------------------------------------------
+Pseudo Code Task:
+2
+Start
+ Read random integer
+ count=0
+ count=count+1
+ total_of_integers=random integers added together
+ average_number=total_of_integers/count
+ print "The average of the numbers entered is average_number"
+End
+---------------------------------------------------------------------------------------------------------------------------------------------
+Pseudo Code Task:
+3
+Start
+ Request items for grocery list 
+ Read items from grocery list
+ alphabetical_order=sort grocery list in alphabetical order
+ print alphabetical_order
+End
+---------------------------------------------------------------------------------------------------------------------------------------------
+Pseudo Code Task:
+4
+Start
+ Read X & Y
+ S=X+Y
+ A=S/2
+ P=X*Y
+ print values of S,A and P
+End
+----------------------------------------------------------------------------------------------------------------------------------------------

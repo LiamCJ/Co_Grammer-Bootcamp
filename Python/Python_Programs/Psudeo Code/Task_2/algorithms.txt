@@ -1,0 +1,28 @@
+1
+Start
+ Request user to enter their name
+ store request in first_name
+ print "first_name Hello,World"
+End
+
+-----------------------------------------------------------------------------------------------------
+2
+Start
+ Request user to enter their age
+ store age in age
+ if age>=18
+  print "You're old Enough"
+ elif age>=16 and age<18
+  print "You're almost there"
+ else
+  print "You're not old enough"
+ Endif
+End  
+-----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------
