@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Catalogue</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--[lines 9-11] were needed for the dropdown function to work-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="design.css">
+
+</head>
+
+<body id="comicSans">
+    <!--the catalogue page-->
+    <h1 id="cat">STAN CATALOGUE</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div>
+            <ul class="navbar-nav mr-auto">
+                <li class="navls">
+                    <a href="Home.html">Home</a>
+                </li>
+                <li class="navls">
+                    <a href="checkout.html">Checkout</a>
+                </li>
+                <li class="navls">
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h3>When Image Is Clicked More Info On The Item Will Be Displayed</h3>
+    <hr>
+    <!--A grid with the stores items and details about the items-->
+    <div id="center" class="container">
+        <div class="row">
+            <div class="col">
+                <a href="#image1" data-toggle="collapse"><img src="Items/PaidInFull.jpg" alt="Paid_In_Full.jpg" class="two img-thumbnail img-fluid"></a>
+                <!--A thumbnail is an image with a 1 pixel border around it-->
+                <!--A responsive image scales the size of the image respectively to the window size-->
+                <p>Album Name: Paid In Full<br>Artist(s): Eric B. & Rakim</p>
+                <div id="image1" class="collapse">
+                Album Length: 45 minutes<br>No. of Tracks: 10<br>Release Year: 1987<br>Record Label: 4th & B'way,Island<br>Genre: Hip Hop/RapHip Hop/Rap<br>Producer: Eric B. & Rakim<br><b><i>Scroll Down To See Item Price</i></b>
+                </div>
+                <hr>
+            </div>
+            <div class="col">
+                <a data-toggle="collapse" href="#image2"><img src="Items/DSTT.jpg" alt="Don't_Sweat_the_Technique.jpg" class="two img-thumbnail img-fluid "></a>
+                <p>Album Name: Don't Sweat The Technique<br>Artist(s): Eric B. & Rakim</p>
+                <div id="image2" class="collapse">
+                Album Length: 47 minutes<br>No. of Tracks: 12<br>Release Year: 1992<br>Record Label: MCA<br>Genre: East Coast Hip Hop,Jazz Rap<br>Producer: Eric B. & Rakim<br><b><i>Scroll Down To See Item Price</i></b>
+                </div>
+                <hr>
+                
+            </div>
+            <div class="col">
+                <a data-toggle="collapse" href="#image3"><img src="Items/LetItHitEm.jpg" alt="LetItHitEm.jpg" class="two img-thumbnail img-fluid "></a>
+                <p>Album Name: Let The Rhythm Hit 'Em<br>Artist(s): Eric B. & Rakim</p>
+                <div id="image3" class="collapse">
+                Album Length: 54 minutes<br>No. of Tracks: 11<br>Release Year: 1990<br>Record Label: MCA<br>Genre: Hip Hop/Rap<br>Producer: Eric B. & Rakim<br><b><i>Scroll Down To See Item Price</i></b>
+                </div>
+                <hr>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a data-toggle="collapse" href="#image4"><img src="Items/The_R.jpg" alt="The_R.jpg" class="two img-thumbnail img-fluid "></a>
+                <p>Album Name: The 18th Letter<br>Artist(s): Rakim</p>
+                <div id="image4" class="collapse">
+                Album Length: 54 minutes<br>No. of Tracks: 17<br>Release Year: 1997<br>Record Label: Universal/MCA<br>Genre: Hip Hop/Rap<br>Producer: DJ Premier<br><b><i>Scroll Down To See Item Price</i></b>
+                </div>
+                <hr>
+                
+            </div>
+            <div class="col">
+                <a data-toggle="collapse" href="#image5"><img src="Items/TheMaster.jpg" alt="TheMaster.jpg" class="two img-thumbnail img-fluid "></a>
+                <p>Album Name: The Master<br>Artist(s): Rakim</p>
+                <div id="image5" class="collapse">
+                Album Length: 55 minutes<br>No. of Tracks: 17<br>Release Year: 1999<br>Record Label: Universal/MCA<br>Genre: Hip Hop/Rap<br>Producer: DJ Premier<br><b><i>Scroll Down To See Item Price</i></b>
+                </div>
+                <hr>
+                
+            </div>
+            <div class="col">
+                <a data-toggle="collapse" href="#image6"><img src="Items/7thSeal.jpg" alt="7thSeal.jpg" class="two img-thumbnail img-fluid "></a>
+                <p>Album Name: The Seventh Seal<br>Artist(s): Rakim</p>
+                <div id="image6" class="collapse">
+                Album Length: 55 minutes<br>No. of Tracks: 14<br>Release Year: 2009<br>Record Label: Ra Records<br>Genre: Hip Hop/Rap<br>Producer: Rakim<br><b><i>Scroll Down To See Item Price</i></b>
+                </div>
+                <hr>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a data-toggle="collapse" href="#image7"><img src="Items/36_Chambers.jpg" alt="36_Chambers.jpg" class="two img-thumbnail img-fluid "></a>
+                <p>Album Name: Enter The Wu-Tang:36 Chambers<br>Artist(s): The Wu-Tang Clan</p>
+                <div id="image7" class="collapse">
+                Album Length: 62 minutes<br>No. of Tracks: 12<br>Release Year: 1993<br>Record Label: Loud<br>Genre: East CoastHip Hop/Rap<br>Producer: RZA<br><b><i>Scroll Down To See Item Price</i></b>
+                </div>
+                <hr>
+                
+            </div>
+            <div class="col">
+                <a data-toggle="collapse" href="#image8"><img src="Items/SSLP.jpg" alt="SSLP.jpg" class="two img-thumbnail img-fluid "></a>
+                <p>Album Name: The Slim Shady LP<br>Artist(s): Eminem</p>
+                <div id="image8" class="collapse">
+                Album Length: 60 minutes<br>No. of Tracks: 20<br>Release Year: 1999<br>Record Label: Aftermath<br>Genre: Hip Hop/Rap<br>Producer: Dr. Dre<br><b><i>Scroll Down To See Item Price</i></b>
+                </div>
+                <hr>
+                
+            </div>
+            <div class="col">
+                <a data-toggle="collapse" href="#image9"><img src="Items/MM_LP.jpg" alt="MM_LP.jpg" class="two img-thumbnail img-fluid "></a>
+                <p>Album Name: The Marshall Mathers LP<br>Artist(s): Eminem</p>
+                <div id="image9" class="collapse">
+                Album Length: 72 minutes<br>No. of Tracks: 18<br>Release Year: 2000<br>Record Label: Aftermath<br>Genre: Hip Hop/Rap<br>Producer: Dr. Dre<br><b><i>Scroll Down To See Item Price</i></b>
+                </div>
+                <hr>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a data-toggle="collapse" href="#image10"><img src="Items/Em_Show.jpg" alt="Em_Show.jpg" class="two img-thumbnail img-fluid "></a>
+                <p>Album Name: The Eminem Show<br>Artist(s): Eminem</p>
+                <div id="image10" class="collapse">
+                Album Length: 77 minutes<br>No. of Tracks: 20<br>Release Year: 2002<br>Record Label: Aftermath<br>Genre: Hip Hop/Rap<br>Producer: Dr. Dre<br><b><i>Scroll Down To See Item Price</i></b>
+                </div>
+                <hr>
+                
+            </div>
+        </div>
+    </div>
+
+   <!--A Dark Table with a 1 pixel border that is rounded that changes opacity when hovered over and is aligned in center that contains the items prices-->
+    <table class="price">
+        <tr>
+            <td colspan="3"> Price List For Each Item In The Catalogue</td>
+        </tr>
+        <tr>
+            <td><img src="Items/PaidInFull.jpg" alt="Paid_In_Full.jpg" class="img-fluid rounded-circle fif"></td>
+            <td>Paid In Full</td>
+            <td>R150</td>
+        </tr>
+        <tr>
+            <td><img src="Items/DSTT.jpg" alt="Don't_Sweat_the_Technique.jpg" class="img-fluid rounded-circle fif"></td>
+            <td>Don't Sweat The Technique</td>
+            <td>R150</td>
+        </tr>
+        <tr>
+            <td><img src="Items/LetItHitEm.jpg" alt="LetItHitEm.jpg" class="img-fluid rounded-circle fif"></td>
+            <td>Let The Rhythm Hit 'Em</td>
+            <td>R150</td>
+        </tr>
+        <tr>
+            <td><img src="Items/The_R.jpg" alt="The_R.jpg" class="img-fluid rounded-circle fif"></td>
+            <td>The 18th Letter</td>
+            <td>R150</td>
+        </tr>
+        <tr>
+            <td><img src="Items/TheMaster.jpg" alt="TheMaster.jpg" class="img-fluid rounded-circle fif"></td>
+            <td>The Master</td>
+            <td>R150</td>
+        </tr>
+        <tr>
+            <td><img src="Items/7thSeal.jpg" alt="7thSeal.jpg" class="img-fluid rounded-circle fif"></td>
+            <td>The Seventh Seal</td>
+            <td>R150</td>
+        </tr>
+        <tr>
+            <td><img src="Items/36_Chambers.jpg" alt="36_Chambers.jpg" class="img-fluid rounded-circle fif"></td>
+            <td>Enter The Wu-Tang:36 Chambers</td>
+            <td>R150</td>
+        </tr>
+        <tr>
+            <td><img src="Items/SSLP.jpg" alt="SSLP.jpg" class="img-fluid rounded-circle fif"></td>
+            <td>The Slim Shady LP</td>
+            <td>R150</td>
+        </tr>
+        <tr>
+            <td><img src="Items/MM_LP.jpg" alt="MM_LP.jpg" class="img-fluid rounded-circle fif"></td>
+            <td>The Marshall Mathers LP</td>
+            <td>R150</td>
+        </tr>
+        <tr>
+            <td><img src="Items/Em_Show.jpg" alt="Em_Show.jpg" class="img-fluid rounded-circle fif"></td>
+            <td>The Eminem Show</td>
+            <td>R150</td>
+        </tr>
+    </table>
+</body>
+
+</html>

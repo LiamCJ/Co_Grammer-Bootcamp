@@ -1,0 +1,19 @@
+/*hides the hr tag with the id 'hide'*/
+#hide {
+    clear: both;
+    border: 1px solid transparent;
+    height: 0px;
+}
+/*changes the calculators button's text and border colors to black and the background color to gray and changes the width of the button*/
+#calBut {
+    background-color: #C0C0C0;
+    color: #000000;
+    border: solid #000000 2px;
+    width: 100%;
+}
+/*when tthe calculators button's are hovered over the background color is changed to black and the text color is changed to gray
+*/
+#calBut:hover{
+	background-color: #000000;
+	color: #C0C0C0;
+}

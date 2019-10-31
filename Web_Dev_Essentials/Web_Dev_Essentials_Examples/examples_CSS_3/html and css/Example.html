@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- Comment the line below out to see the difference between using Bootsrap and not using it in this example -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>Bootstrap example</title>
+    <!--Any style rules written here will override any Bootstrap rules.
+   Any style rules in custom external stylesheets you could link to would also
+   override Bootstrap style rules -->
+    <style>
+        img{
+      width: 250px;
+      height: 180px;
+   }
+   </style>
+</head>
+
+<body>
+    <h1>This illustrates how Bootstrap classes can be used to style a number of elements</h1>
+    <h3>View the source of this page to see how Bootstrap has been used. Be sure to visit the
+    links to Bootstrap examples referred to in the comments. </h3>
+    <!-- Example of implementing a navbar with search using Bootstrap. See More
+  here: https://getbootstrap.com/docs/4.1/components/navbar/#forms -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="JHG.html"> Home </a>
+        <a class="navbar-brand" href="Gallery.html"> Our Gallery </a>
+        <a class="navbar-brand" href="productinfo.html"> Product Information </a>
+        <a class="navbar-brand" href="mailto:hyperion@gmail.com"> Contact Us </a>
+        <a class="navbar-brand" href="https://www.paypal.com/za/home"> Get PayPal </a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <!--
+  See example of implementing hoverable table: https://getbootstrap.com/docs/4.1/content/tables/#hoverable-rows -->
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th colspan="4" id="headinggallery"> Example of Bootsrap hoverable table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"> Fruits </th>
+                <td><img src="../images/image1.jpg" alt="thumbnail example" class="img-thumbnail"></td>
+                    <!--Thumbnails: https://getbootstrap.com/docs/4.1/content/images/#image-thumbnails-->
+                <td><img src="../images/image2.jpg" alt="responsive image example" class="img-fluid"></td>
+                    <!--Responsive images: https://getbootstrap.com/docs/4.1/content/images/#responsive-images-->
+                <td><img src="../images/image3.jpg" alt="round image example" class ="rounded-circle"></td>
+                    <!-- Round image: https://getbootstrap.com/docs/4.1/migration/#images-->
+            </tr>
+            <tr>
+                <th scope="row">Wines</th>
+                <td><img src="../images/image4.jpg" alt="Two classes at once example" class="img-fluid img-thumbnail"></td>
+                <td><img src="../images/image5.jpg" alt="Rounded example" class="rounded"></td>
+                    <!-- Rounded borders: https://getbootstrap.com/docs/4.1/utilities/borders/#border-radius -->
+                <td><img src="../images/image6.jpg" alt="Shadow example" class="shadow p-3 mb-5 bg-white rounded"></td>
+                    <!-- Shadows: https://getbootstrap.com/docs/4.1/utilities/shadows/#examples -->
+            </tr>
+            <tr>
+                <th scope="row">Nuts&Cheese</th>
+                <td><img src="../images/image7.jpg" alt="No Bootstrap example"></td>
+                <td><img src="../images/image8.jpg" alt="No Bootstrap example"></td>
+                <td><img src="../images/image9.jpg" alt="No Bootstrap example"></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Forms: https://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form>
+        <h2>See a form styled using Bootstrap</h2>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+
+</html>

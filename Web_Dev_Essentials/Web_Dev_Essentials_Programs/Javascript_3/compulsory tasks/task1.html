@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Task1</title>
+</head>
+
+<body>
+    <h1 id="header">Task 1 Begins Below</h1>
+    <button onclick="hSize()">Change Heading Size</button>
+    <!--[lines 11,15,18,24,27,32] event:onclick call the function that is assign to when the button is clicked on-->
+    <p id="p1" onmouseover="parOn()" onmouseout="parOff()">Change the font style of a paragraph.</p>
+    <!--[lines 13,16,26] event:onmouseover call the function that is assign to when the cursor is moved on the element -->
+    <button onclick="pFont()">Change Paragraph Font</button>
+    <p id="p2" onmouseover="parOn2()" onmouseout="parOff2()">Highlight a paragraph.</p>
+    <!--[lines 13,16,26] event:onmouseout call the function that is assign to when the cursor is moved off of the element-->
+    <button onclick="hPar()">Highlight Paragraph</button><br>
+    <hr>
+    <div oncontextmenu="alrt()" id="hide">
+        <!--event:oncontextmenu call the function that is assign to when the div is clicked on-->
+        <img id="img1" src="Task1Images/Task1img1.jpg"><br>
+    </div>
+    <button onclick="hImg()">Hide Image</button><br>
+    <br>
+    <img id="img2" src="Task1Images/Task1img2.jpg" onmouseover="imgOn()" onmouseout="imgOff()"><br>
+    <button onclick="chImg()">Change Image</button><br>
+    <form>
+        <input type="text" name="Fname" placeholder="Enter First Name">
+        <input type="text" name="Lname" placeholder="Enter Last Name">
+        <input type="email" name="email" placeholder="Enter Email">
+        <button onclick="alrt2()">Enter</button>
+    </form>
+    <script type="text/javascript" src="task1.js"></script>
+</body>
+
+</html>

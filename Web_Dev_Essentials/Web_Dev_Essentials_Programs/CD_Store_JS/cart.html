@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cart</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+
+<body>
+    <h1>Cart</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <table id="cartItems">
+            <tr>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+        </table>
+        <article id="userTotal">Total: </article>
+        <a href="coups.html">Apply for Coupons</a><br>
+        <a href="checkout.html"><button>Checkout</button></a>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script> 
+    <script type="text/javascript">
+    //[lines 34-35] get the total from the session storage and displays it in line 27
+    var total = parseInt(sessionStorage.getItem("Total"));
+    document.getElementById("userTotal").append(total);
+    
+    var cart = JSON.parse(sessionStorage.getItem("Cart"));
+    var show = document.getElementById("cartItems");
+    // a function that displays products that are added to the cart to the table 
+    cart.forEach(function(vinyl) {
+        //[lines 42-43] creates a new row for each product 
+        var row = document.createElement("tr");
+        show.appendChild(row);
+        //[lines 44-50] create cells for the table with data of the products
+        var nameCell = document.createElement("td");
+        nameCell.innerHTML = vinyl[0];
+        row.appendChild(nameCell);
+
+        var priceCell = document.createElement("td");
+        priceCell.innerHTML = vinyl[1];
+        row.appendChild(priceCell);
+    });
+    </script>
+</body>
+
+</html>

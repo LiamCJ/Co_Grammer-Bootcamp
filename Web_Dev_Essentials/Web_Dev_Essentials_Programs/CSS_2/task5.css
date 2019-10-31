@@ -1,0 +1,80 @@
+/*The body of the page is centered by moving the margin 25% to the left and right with a total width of 50%*/
+body {
+margin-right: 25%;
+margin-left: 25%;
+}
+/*h1 tags' text are all capitalize*/
+h1 {
+    text-transform: capitalize;
+}
+/*the id,mainPic is modified so that the width of the image is equal to the pages width and the height is 300 pixels*/
+#mainPic {
+    width: 100%;
+    height: 300px;
+}
+/*the navigation bar's background color is made orange red with a padding of 3 pixels*/
+#mainNav {
+    background-color: #FF4500;
+    padding: 3px;
+}
+/*all link texts are made black with no text decoration[no line under them]*/
+a {
+    color: #000000;
+    text-decoration: none;
+}
+/*when a link text is hovered over with the cursor the text color is changed to white*/
+a:hover {
+    color: #FFFFFF
+}
+/*[lines 30-38]make the list with the links in line in the center without any list style type and the font changed to Arial */
+ul.listLinks {
+    list-style-type: none;
+    text-align: center;
+    font-family: "Arial";
+}
+
+ul.listLinks li {
+    display: inline
+}
+/*each article is floated to the left  with a boroder of 1 pixel and coloured solid dark gray and displayed in the same inline block*/
+article {
+    float: left;
+    width: 32.4%;
+    height: auto;
+    border: 1px solid #A9A9A9;
+    display: inline-block;
+}
+/*each paragraph in an article is padded with 10 pixels and is justified*/
+article p {
+    text-align: justify;
+    padding: 10px;
+}
+/*Each article heading is made smaller so that the 'information technology' text fits inside it's article*/
+.articleHeadings{font-size: 1em}
+/*each article pic has the same width as its respective article withe a height of 200 pixels*/
+img.articlePics {
+    width: 100%;
+    height: 200px
+}
+/*when a article picture is hovered over with a cursor its opacity is decreased by 50% */
+img.articlePics:hover {
+    opacity: 0.5
+}
+/*the more button is given a rounded border of 5 pixels that is 3 pixels wide and solid black, its background is made orange red, floated to the right with a margin of 3 pixels*/
+a.moreButton {
+    border-radius: 5px;
+    background-color: #FF4500;
+    border: 3px solid #000000;
+    float: right;
+    margin: 3px
+}
+/*when the more button is hovered over with the cursor the background is made black and the text is made orange red*/
+a.moreButton:hover {
+    background-color: #000000;
+    color: #FF4500;
+}
+/*the footer's text is centered and displayed in a in line block*/
+footer {
+    text-align: center;
+    display: inline-block;
+}

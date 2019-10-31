@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+
+<body>
+    <!--the home page-->
+    <h1>STAN CD'S STORE</h1>
+    <!--The navbar for the store-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="cart.html">Your Cart</a>
+                    <ul class="sec">
+                        <li><a href="coups.html">Coupons</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>WELCOME</article>
+        <article>TO</article>
+        <article>STAN CD'S STORE</article>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script> 
+    <!-- Javascript for pages animation  -->
+    <script type="text/javascript">
+        //[lines 35-44]animates the text in lines 27-29
+    setInterval(function() {
+        $("article").animate({
+            width: "250px",
+            height: "50px"
+        }, 1000);
+        $("article").css({
+            "color": "#8E24AA",
+            "font-size": "50px"
+        }).slideUp(500).slideDown(500);
+    });
+    </script>
+</body>
+
+</html>

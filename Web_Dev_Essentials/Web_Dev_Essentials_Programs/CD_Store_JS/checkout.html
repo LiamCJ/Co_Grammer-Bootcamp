@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="cart.html">Your Cart</a>
+                    <ul class="sec">
+                        <li><a href="coups.html">Coupons</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <!-- option for the user to collect their package -->
+        <h2 id="coll">Choose a Form of Collection</h2>
+        <form id="slct1">
+            <input type="radio" name="transport">
+            <label>Region 1</label><br>
+            <input type="radio" name="transport">
+            <label>Region 2</label><br>
+        </form>
+        <h2 id="del">Choose a Form of Delivery</h2>
+        <form id="slct2">
+            <input type="radio" name="transport" id="air">
+            <label>Air</label><br>
+            <input type="radio" name="transport" id="shp">
+            <label>Ship</label>
+        </form><br>
+        <form>
+            <input type="text" placeholder="First Name"><br>
+            <input type="text" placeholder="Last Name"><br>
+            <input type="text" placeholder="Email Address"><br>
+            <input type="text" placeholder="Home Address"><br>
+            <input type="text" placeholder="Area/Postal Code"><br>
+            <input type="text" placeholder="Province"><br>
+            <input type="text" placeholder="Country">
+            <hr>
+            <button onclick="pay()">Confirm Order</button>
+        </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script> 
+    <script type="text/javascript" src="JavaScripts/checkout.js"></script>
+</body>
+
+</html>

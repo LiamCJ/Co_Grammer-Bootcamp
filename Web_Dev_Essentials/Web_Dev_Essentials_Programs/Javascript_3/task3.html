@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Task3</title>
+    <link rel="stylesheet" type="text/css" href="task3.css">
+</head>
+
+<body>
+    <h1>Task 3 Requirements Below:</h1>
+    <img src="task3images/task3img.jpg">
+    <h3>Welcome Message:</h3>
+    <!--This form is created to meet task's requirements-->
+    <form>
+        <label>Enter first name: </label><input type="text" id="Fname">
+        <!--Fname is short for first name-->
+        <br>
+        <label>Enter last name: </label><input type="text" id="Lname">
+        <!--Lname is short for last name-->
+        <br>
+        <input onclick="wel()" type="submit">
+        <!--wel is short for welcome-->
+        <!--[lines 22,27,34,37,40,45,55,58,62,64-66,69-72,75-78,81-85] the "onclick" event calls the respective function in order for the output put to be displayed-->
+    </form>
+    <h3>Button That Counts Users Clicks:</h3>
+    <button onclick="count()">Click Here</button>
+    <p id="dis"></p>
+    <!--dis is short for display-->
+    <hr>
+    <h3>Currency Converter</h3>
+    <label>Enter Rands: </label><input type="text" name="rands" id='rands'>
+    <hr id="hide">
+    <button onclick="conD()">Convert to Dollars</button>
+    <label id="dollar"></label>
+    <hr id="hide">
+    <button onclick="conE()">Convert to Euros</button>
+    <label id="euros"></label>
+    <hr id="hide">
+    <button onclick="conP()">Convert to Pounds</button>
+    <label id="pounds"></label>
+    <hr>
+    <p>Select Country:</p>
+    <div id="drop"></div>
+    <button type="button" onclick="pos()">Enter To Get Options Position</button>
+    <!--pos is short for position-->
+    <label id="index"></label>
+    <hr>
+    <img src="task3images/calculator.png">
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="display"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input id="calBut" type="button" value="Clr" onclick="clr()"></td>
+            <!--calBut is short for calculator button-->
+            <!--[lines 55,58,62,64-66,69-72,75-78,81-85] values are assign to the buttons in order for the user to know what number or mathematical sign they are entering-->
+            <td colspan="2"><input id="calBut" type="button" value="Mod" onclick="Ent('%')"></td>
+            <!--Ent is short for enter-->
+        </tr>
+        <tr>
+            <td><input id="calBut" type="button" value="7" onclick="Ent('7')"></td>
+            <!--[lines 58,62,64-66,69-72,75-78,81,82,85- between coloumns 74 and 75 ] are the (val)'s of each button which is referred to line 57 of (task3.js)-->
+            <td><input id="calBut" type="button" value="8" onclick="Ent('8')"></td>
+            <td><input id="calBut" type="button" value="9" onclick="Ent('9')"></td>
+            <td><input id="calBut" type="button" value="+" onclick="Ent('+')"></td>
+        </tr>
+        <tr>
+            <td><input id="calBut" type="button" value="4" onclick="Ent('4')"></td>
+            <td><input id="calBut" type="button" value="5" onclick="Ent('5')"></td>
+            <td><input id="calBut" type="button" value="6" onclick="Ent('6')"></td>
+            <td><input id="calBut" type="button" value="-" onclick="Ent('-')"></td>
+        </tr>
+        <tr>
+            <td><input id="calBut" type="button" value="1" onclick="Ent('1')"></td>
+            <td><input id="calBut" type="button" value="2" onclick="Ent('2')"></td>
+            <td><input id="calBut" type="button" value="3" onclick="Ent('3')"></td>
+            <td><input id="calBut" type="button" value="/" onclick="Ent('/')"></td>
+        </tr>
+        <tr>
+            <td><input id="calBut" type="button" value="." onclick="Ent('.')"></td>
+            <td><input id="calBut" type="button" value="0" onclick="Ent('0')"></td>
+            <td><input id="calBut" type="button" value="=" onclick="Ans()"></td>
+            <!--Ans is short for answer-->
+            <td><input id="calBut" type="button" value="*" onclick="Ent('*')"></td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="task3.js"></script>
+</body>
+
+</html>

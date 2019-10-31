@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>36 Chambers</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+
+<body>
+    <h1>36 Chambers: Enter The Wu-Tang</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="cart.html">Your Cart</a>
+                    <ul class="sec">
+                        <li><a href="coups.html">Coupons</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="itemPic/TWC.jpg">
+        <button data-name="36 Chambers:Enter The Wu-tang" data-price="172.5" onclick="twc()">Add To Cart</button>
+        <hr>
+        <article>
+            <h2>Price: R172.5 incl. VAT</h2>
+            Album Name: Enter The Wu-Tang:36 Chambers<br>Artist(s): The Wu-Tang Clan<br>Album Length: 62 minutes<br>No. of Tracks: 12<br>Release Year: 1993<br>Record Label: Loud<br>Genre: East CoastHip Hop/Rap<br>Producer: RZA
+        </article>
+        <hr>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script> 
+    <script type="text/javascript">
+function twc() {
+    //getting data from session and session storage
+    var cart = JSON.parse(sessionStorage.getItem("Cart"));
+    var total = parseInt(sessionStorage.getItem("Total"));
+    
+    //a conditional statement for when the cart is empty the product will be inserted in the array else the product will be added to the array
+    if (cart == null) {
+        cart = [[$(this).data("name"), $(this).data("price")]];
+    } else {
+        cart.push([$(this).data("name"), $(this).data("price")]);
+    };
+
+    //saves the cart
+    sessionStorage.setItem("Cart", JSON.stringify(cart));
+
+    //increasing the total and displaying it
+    sessionStorage.setItem("Total", total += parseFloat([$(this).data("price")]));
+    alert("Your Current Total Is R" + total);
+};
+    </script>
+</body>
+
+</html>

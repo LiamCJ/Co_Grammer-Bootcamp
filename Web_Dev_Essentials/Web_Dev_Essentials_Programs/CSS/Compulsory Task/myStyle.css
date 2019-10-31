@@ -1,0 +1,47 @@
+/*The entire page is moved 2% inward from all directions */
+body {
+    margin: 2%
+}
+/*[lines 6-9 & 11-14] All h1 & h2's are centered with the background color orangered*/
+h1 {
+    text-align: center;
+    background-color: #FF4500
+}
+
+h2 {
+    text-align: center;
+    background-color: #FF4500
+}
+/*ALl h3's are centered with the background color orangered and the text color is chocolate*/
+h3 {
+    text-align: center;
+    background-color: #FF4500;
+    color: chocolate
+}
+/*All paragraph's texts are changed to maroon*/
+p {
+    color: #800000;
+}
+
+/*[lines 27-31] All images with the class cen[cen is center] is put in the center by being displayed with a block and put in the center by the making the margins equal on both sides of the block*/
+img.cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*[lines 34-39] applies for the table,table heading and table data which also puts the table in center by making the margins equal on both sides, and a border is being made arounf the table,th and td which is collapsed so they are connected */
+table,th,td {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+/*the text of the heading in the table is red */
+th {
+    color: red
+}
+/*the text of the data in the table is red */
+td {
+    color: purple
+}

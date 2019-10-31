@@ -1,0 +1,89 @@
+body {
+    width: 50%;
+    margin: auto;
+}
+
+#mainPic {
+    width: 100%;
+}
+
+#mainNav {
+    background: orangered;
+    padding: 3px;
+}
+
+.listLinks {
+    list-style-type: none;
+    text-align: center;
+    font-family: cursive;
+    padding: 0;
+}
+
+
+.listLinks a:hover {
+    color: white;
+}
+
+.listLinks li {
+    display: inline;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Custom styles applied to articles. */
+article {
+    float: left;
+    width: 32.4%;
+    height: auto;
+    border: 1px solid #A9A9A9;
+    display: inline-block;
+}
+
+article p {
+    text-align: justify;
+    padding: 10px;
+}
+
+/* Notice that this class is not applied because we've chosen to use the Bootstrap button style rather. */
+.moreButton {
+    padding: 10px;
+    float: right;
+    border: 3px solid black;
+    border-radius: 8px;
+    background: orangered;
+}
+
+/* Notice that this class is not applied because we've chosen to use the Bootstrap button style rather. */
+background: black;
+color: orange;
+}
+
+footer {
+    text-align: center;
+    clear: both;
+}
+
+/* If you want to modify some of the Bootstrap styles, you can refer to the class names as shown by the CSS rules below: */
+
+.img-fluid {
+    width: 100%;
+    height: 200px;
+}
+
+.img-fluid:hover {
+    opacity: 0.5;
+
+}
+
+/* Change the look of the Bootstrap button style. */
+.btn {
+    padding: 10px;
+    float: right;
+    border: 3px solid black;
+    border-radius: 8px;
+    background: orangered;
+}

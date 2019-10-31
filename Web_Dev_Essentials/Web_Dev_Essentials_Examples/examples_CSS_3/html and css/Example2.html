@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My subject page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- How to link Bootstrap to your HTML file.
+       Comment the line below out to see the difference between using Bootsrap and not using it in this example. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Custom stylesheet. Comment out the stylesheet below to see the effect of removing non-Bootstrap styles from your webpage.
+        See what happens when you link the stylesheet first before Bootstrap. -->
+    <link rel="stylesheet" type="text/css" href="myStylesbootstrap.css">
+</head>
+
+<body class="container">
+    <header>
+        <h1 id="mainHeading">Subject Page</h1>
+    </header>
+    <img id="mainPic" src="../images/Classroom.png" alt="desk" height="200" width="auto"/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <ul class="listLinks">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="InformationTechnology.html">IT</a></li>
+            <li><a href="Biology.html">Biology</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Check out https://getbootstrap.com/docs/4.1/layout/grid/ to learn more about the Bootstrap grid system.
+        You can also implement the Bootstrap grid on 'section' and 'article' elements. -->
+    <section class="row">
+        <article class="col-sm pb-4">
+            <img src="../images/ITPic.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" alt="InformationTechnology" />
+            <h2 class="articleHeadings">Information Technology</h2>
+            <p>My overview</p>
+            <a href="#" class="btn btn-success">More</a>
+        </article>
+        <article class="col-sm pb-4">
+            <img src="../images/biology.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" alt="biology" />
+            <h2 class="articleHeadings">Biology</h2>
+            <p>My overview</p>
+            <a href="#" class="btn btn-success">More</a>
+        </article>
+        <article class="col-sm pb-4">
+            <img src="../images/history.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" alt="History" />
+            <h2 class="articleHeadings">History</h2>
+            <p>My overview</p>
+            <a href="#" class="btn btn-success">More</a>
+        </article>
+    </section>
+    <!-- Using 'div' elements to implement the Bootstrap grid.
+
+    <div class="row">
+        <div class="col-sm pb-4">
+            <img src="images/ITPic.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" alt="InformationTechnology" />
+            <h2 class="articleHeadings">Information Technology</h2>
+            <p>My overview</p>
+            <a href="#" class="btn btn-success">More</a>
+        </div>
+        <div class="col-sm pb-4">
+            <img src="images/biology.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" alt="biology" />
+            <h2 class="articleHeadings">Biology</h2>
+            <p>My overview</p>
+            <a href="#" class="btn btn-success">More</a>
+        </div>
+        <div class="col-sm pb-4">
+            <img src="images/history.jpg" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" alt="History" />
+            <h2 class="articleHeadings">History</h2>
+            <p>My overview</p>
+            <a href="#" class="btn btn-success">More</a>
+        </div>
+    </div>
+    -->
+    <footer>
+        <p> &copy; Hyperion Development.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by Valerie Moyo</p>
+        <p>Last updated: 23 May 2016</p>
+    </footer>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

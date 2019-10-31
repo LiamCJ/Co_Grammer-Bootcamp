@@ -1,0 +1,136 @@
+/*The background color of the page changes between 4 different colours with the margin around the page 3% and all texts aligned in the center*/
+body {
+    text-align: center;
+    margin: 3%;
+    animation: colorchange 10s infinite;
+}
+/*[pur is short for purple] changes the font to georgia and font color to purple of these pages with the [pur] class in their body*/
+#pur {
+    font-family: Georgia, serif;
+    color: #8E24AA
+}
+/*Changes the font size of the titles with the relative classes*/
+#intro,#abt {
+    font-size: 75px;
+}
+/*changes the font to Comic Sans and font color to silver of these pages with the [comicSans] class in their body*/
+#comicSans {
+    font-family: Comic Sans MS;
+    color: #C0C0C0;
+}
+/*Changes the font size of the titles with the relative class*/
+#cat {
+    font-size: 30px;
+}
+/*[cour is short for Courier] changes the font to Courier and font color to gray like colour  of these pages with the [cour] class in their body*/
+#cour {
+    font-family: Courier;
+    color: #708090
+}
+/*Changes the font size of the titles with the relative class*/
+#check {
+    font-size: 50px;
+}
+/*[lines 29-57] customize the navbar to fit the unique looks of each page */
+a {
+    color: #8E24AA;
+    text-decoration: none;
+    padding-right: 10px;
+    letter-spacing: 0.4em;
+}
+/*when cursor is hovered over the links the opacity is made 40% without any text underlined */
+a:hover {
+    opacity: 0.4;
+    text-decoration: none;
+}
+/*[navls is navigation link store] which changes the link color to silver for the catalogue/cdstore page*/
+.navls a {
+    color: #C0C0C0;
+}
+/*[navlc is navigation link checkout] which changes the link color to a gray like colour fo the checkout page*/
+.navlc a {
+    color: #708090;
+}
+/*pads the table in catalogue 500 pixels to the left and centered with the margins being equal on both sides*/
+.price {
+    padding-left: 500px;
+    margin-left: auto;
+	  margin-right: auto;
+}
+/*puts a 1 pixel silver border on the table*/
+table.price td {
+    border: 1px solid #C0C0C0;
+}
+/*when a cursor is hovered over the tables rows the opacity is made 40%*/
+table.price tr:hover {
+    opacity: 0.4;
+}
+/*Changes the background colour of the quotes to gray*/
+#qou {
+    background-color: #263238;
+}
+/*Holds he colors that the background change to*/
+@keyframes colorchange {
+    0% {background: #000000;}
+    25% {background: #0E0C0C;}
+    50% {background: #212121 ;}
+    75% {background: #3E2723;}
+    100% {background: #000000;}
+}
+/*2 pixel pads  and gives 2 pixel silver borders to each pictures in a grid column */
+.col img {
+    padding: 2px;
+    border: 2px solid #C0C0C0;
+}
+/*2 pixel pads  and gives 2 pixel silver borders to each pictures in a table*/
+tr td img {
+    padding: 2px;
+    border: 2px solid #C0C0C0;
+}
+/*changes the size of the images with the (two) class*/
+.two{
+	height: 220px;
+	width: 220px;
+}
+/*changes the size of the images with the (fif) class*/
+.fif{
+	height: 50px;
+	width: 50px;	
+}
+/*[at is short for artist table]changes the size of the images with the (at) class*/
+.at{
+	height: 220px;
+	width: 220px;
+}
+/*when the image with the (two) class inside the grid's column is hovered over the image will increase */
+.col .two:hover {
+    width: 340px;
+    height: 340px;
+    opacity: 0.5;
+}
+/*[pad is short for padding]2 pixel pad with a 1 pixel border and moves 400 pixels to the left for the submit button*/
+#pad {
+	margin-left: 400px;
+	border: 1px;
+  padding: 5px;
+}
+/*[chl is short for checkout left]give the div tag a gray background with a 5 pixel border radius and floats it to the left */
+#chl {
+    float: left;
+    background-color: #263238;
+    border-radius: 5px
+}
+/*[chr is short for checkout right]give the div tag a gray background with a 5 pixel border radius and floats it to the right*/
+#chr {
+    float: right;
+    background-color: #263238;
+    border-radius: 5px
+}
+/*give the div tag a gray background with a 5 pixel border radius*/
+#about{
+	background-color: #263238;
+	border: 2px;
+}
+hr{
+    width: 50px;
+}

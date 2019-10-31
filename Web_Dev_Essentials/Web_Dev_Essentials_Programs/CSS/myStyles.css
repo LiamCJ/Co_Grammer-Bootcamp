@@ -1,0 +1,57 @@
+/*The background color of the page is being made black and text color purple with the margin around the page 3%*/
+body {
+    background-color: #000000;
+    color: #800080;
+    margin: 3%;
+}
+/**/
+img.wel {
+    display: block;
+    padding-left: 425px;
+    height: 80px;
+    width: auto;
+}
+/*all links' texts are made purple*/
+a {
+    color: #800080;
+    text-decoration: none;
+}
+/*when cursor is hovered over the links it will turn gainsboro*/
+a:hover {
+    color: #DCDCDC;
+}
+/*[lines 24-33]make the list with the links in line in the center without any list style type with a background that is rounded off and is gray  */
+ul.nav {
+    list-style-type: none;
+    text-align: center;
+    background-color: #808080;
+    border-radius: 25px;
+}
+ul.nav li {
+    display: inline
+}
+/*headings h1,h2 and h3 are made time new roman and italic*/
+h1,h2,h3 {
+    font-family: "Times New Roman";
+    font-style: italic;
+}
+/*h1 is centered with a rounded border that is coloured gray*/
+h1 {
+    text-align: center;
+    background-color: #808080;
+    border-radius: 25px;
+}
+/*h2 is centered with a rounded border that is coloured gray*/
+h2 {
+    text-align: center;
+    background-color: #808080;
+    border-radius: 25px;
+}
+/*[btt is back to top]the back to top link is moved to the right of the screen*/
+#btt {
+    float: right;
+}
+/*when the cursor is hovered over, it turns gainsboro  */
+#btt:hover {
+    color: #DCDCDC;
+}

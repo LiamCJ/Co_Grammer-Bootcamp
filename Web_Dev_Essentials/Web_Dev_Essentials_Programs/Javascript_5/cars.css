@@ -1,0 +1,99 @@
+body {
+    text-align: center
+}
+
+/*[lines 5-85] customize the nav bar*/
+nav a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    background-color: #333;
+    color: #F0F0F0;
+
+}
+
+ul li {
+    padding: 20px;
+    background-color: #333;
+    position: relative;
+}
+
+ul li ul {
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    top: 100%;
+    display: none;
+
+}
+
+.sec li {
+    background: #CCC;
+    color: black;
+    border-bottom: 1px solid gray;
+    gray;
+    position: relative;
+}
+
+
+.third {
+    position: absolute;
+    top: 0;
+    left: 100%
+}
+
+.third li {
+    background: #EEE;
+    width: 100%;
+}
+
+ul li:hover>ul {
+    display: block;
+}
+
+
+ul li:hover {
+    background: #C0C0C0;
+}
+
+ul li::after {
+    content: '';
+    display: block;
+    width: 0%;
+    background-color: #FFF;
+    height: 5px;
+    bottom: 0;
+    position: absolute;
+    transition: 0.5s width;
+}
+
+ul li:hover::after {
+    width: 60%;
+}
+
+.sec>li:hover {
+    background-color: #C0C0C0;
+}
+
+.third li:hover {
+    background: #C0C0C0;
+}
+
+/*resizes the images*/
+td img {
+    width: 750px;
+    height: 500px;
+}
+/*Centers table*/
+table{
+    margin-right: auto;
+    margin-left: auto;
+}
+dialog{
+    background-color: #C0C0C0;
+}

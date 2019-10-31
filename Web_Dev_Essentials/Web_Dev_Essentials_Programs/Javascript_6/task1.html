@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Task 1</title>
+</head>
+
+<body onload="display()">
+    <table>
+        <tr>
+            <th>Add Song Details</th>
+            <th>Edit Song Details</th>
+            <th>Remove Song</th>
+        </tr>
+        <tr>
+            <td>
+                <!-- Form form for the user to enter song details -->
+                <form>
+                    <input type="text" id="artist" placeholder="Artist"><br>
+                    <input type="text" id="title" placeholder="Title"><br>
+                    <input type="text" id="album" placeholder="Album Name"><br>
+                    <input type="text" id="genre" placeholder="Genre"><br>
+                    <button onclick="nSong()">Enter Song</button><br>
+                </form>
+            </td>
+            <td>
+                <select id="edit"></select>
+                <!-- form for the user to edit song information -->
+                <form>
+                    <input type="text" id="newArtist" placeholder="New Artist" required><br>
+                    <input type="text" id="newTitle" placeholder="New Title" required><br>
+                    <input type="text" id="newAlbum" placeholder="New Album Name" required><br>
+                    <input type="text" id="newGenre" placeholder="New Genre" required><br>
+                    <button onclick="rSong()">Edit Detail</button><br>
+                </form>
+            </td>
+            <td>
+                <select id="rmve"></select><br>
+                <!-- button for the user to delete songs -->
+                <form><button onclick="dSong()">Remove Song</button><br><form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <p>When editing data make sure that you re-enter the original data you are not replacing</p>
+            </td>
+            </tr>
+    </table>
+    <h1>FAVOURITE SONGS</h1>
+    <!-- article where list of songs is displayed -->
+    <article id="sng"></article>
+    <script type="text/javascript" src="task1.js"></script>
+</body>
+
+</html>

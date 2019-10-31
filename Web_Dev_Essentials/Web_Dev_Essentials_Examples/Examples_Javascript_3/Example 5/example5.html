@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="example.js"></script>
+</head>
+
+<body  onload="addListOfLanguages()"> <!--When the body loads, the function called addListOfLanguages() which we have 
+    declared in example.js will be called. -->
+    <h1>First JavaScript for Event Handling!</h1>
+    <form onsubmit="displayWelcome()"> <!-- When the Submit button of this form is clicked, the function
+        called displayWelcome() declared in example.js will be called. -->
+        <label>What is your name?</label>
+        <input type="text" name="userName" id='userName'> <!--Notice how the id of this element has been set so
+        that we can use the getElementById() method in example.js to access this element. -->
+        <label>What year were you born in?</label>
+        <input type="text" name="yearOfBirth" id='yearOfBirth'>
+        <input type="submit" name="Submit">
+    </form>
+    <p id="pChangeText">I wonder if we can change this paragraph.</p> 
+    <button onclick="changeText()">Change Text!</button><!--When this button is clicked, the function called changeText() which we have 
+    declared in example.js will be called. -->
+    <br>
+    <p id="style">JavaScript can change the style of an HTML element.</p>
+    <button onclick="changeStyle()">Change me!</button><!--When this button is clicked, the function called changeStyle() which we have 
+    declared in example.js will be called. -->
+    <br>
+    <p>Here's a list of my favourite languages:</p>
+    <ol></ol>
+    <br>
+    <button onclick="showTime()"> What is the time?</button><!--When this button is clicked, the function called showTime() which we have 
+    declared in example.js will be called. -->
+    <p id="time"></p>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+
+<body id="cour">
+    <!--the checkout page-->
+    <h1 id="check">CHECKOUT</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div>
+            <ul class="navbar-nav mr-auto">
+                <li class="navlc">
+                    <a href="Home.html">Home</a>
+                </li>
+                <li class="navlc">
+                    <a href="CdStore.html">Catalogue</a>
+                </li>
+                <li class="navlc">
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+    <h3>Enter Your Details:</h3>
+    <!--A fieldset for two forms floated on opposite sides of it-->
+<fieldset id="bor">
+    <div id="chl">
+    <form>
+        <label>Name: </label><input class="rounded" type="text" name="Fname" required>
+        <label> Surname: </label><input  class="rounded" type="text" name="Sname" required><br>
+        <label>Email Address: </label><br><input  class="rounded" type="email" required><br>
+        <input id="pad" class="rounded" type="submit">
+
+    </form>
+    </div>
+    <div id="chr">
+    <form>
+
+        <label>Home Address: </label><input  class="rounded" type="text" name="Home" required>
+        <label> Phone Number: </label><input  class="rounded" type="number"><br>
+        <label>Password: </label><br><input class="rounded" type="password"><br>
+       
+    </form>
+    </div>
+</fieldset>
+</body>
+
+</html>
