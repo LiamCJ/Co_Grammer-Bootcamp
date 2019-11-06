@@ -1,0 +1,32 @@
+/*aligns all text in the body to the center and makes the background a light gray*/
+body {
+    text-align: center;
+    background-color: #C0C0C0
+}
+
+/*edits the ordered list*/
+ol {
+    text-align: left;
+    margin-left: 375px;
+}
+/*changes the users interests position*/
+#ints {
+    margin-right: 370px;
+}
+
+/*Changes the size of the image*/
+img {
+    height: 225px;
+    width: 200px
+}
+/*displays the image in line with the users info*/
+#image {
+    display: inline-block;
+}
+/*displays the users info in line with the image
+and gives the info a solid black border of 1 pixel 
+*/
+#info {
+    display: inline-block;
+    border: 1px solid #000000;
+}
